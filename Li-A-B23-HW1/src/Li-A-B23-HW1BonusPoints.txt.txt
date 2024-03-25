@@ -1,0 +1,10 @@
+    Bonus Point Open Response for HW1:
+
+1. “Double Trouble” is really a particular instantiation of the fundamental combinatorial game.
+    What is the real name of the game, who “solved” it, and
+    when? Where does it show up in popular culture? [2 bonus points]
+
+Answer:
+    Double trouble is really a particular instantiation of the Nim game.
+    The game of Nim was first "solved" by Charles L. Bouton in 1901.
+    The game of Nim shows up in Books, Movies, and Video Games.

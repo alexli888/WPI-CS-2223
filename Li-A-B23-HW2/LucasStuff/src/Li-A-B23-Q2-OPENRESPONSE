@@ -1,0 +1,21 @@
+PART 2 OF HW2 OPEN RESPONSE SUBMISSIONS
+
+FOR LUCAS NUMBERS
+- These ratio of successive calculations seem to be related to the golden ratio (where a ratio between two numbers that equals about 1.618),
+where the ratio between two consecutive numbers converges to the golden ratio as we progress in the sequence of lucas numbers.
+The successive calculation times shows that as we calculate larger Lucas Numbers, the time it takes to compute them decreases. This highlights
+the algorithms efficiency.
+
+- The order of growth of this algorithm is O(n), as we use memorization of the previously computed lucas numbers by
+storing them in an array. Also, our linear recursive structure calls in the algorithm means that the number of recursive
+calls grown linearilly with n.  As we increase n, the time to complete grows linearly.
+
+
+FOR MY 'CUSTOM SEQUENCE' (The Sequence of Prime Numbers)
+- The ratios of successive prime numbers appears to get closer to 1 as we increase n .
+
+- I believe the order of growth for this algorithm is O(sqrt(n)), as in the for loop of the algorithm, we check teh conditions
+in the for loop a maximum of (sqrt(n))/6 times, while the rest of the operations in the algorithm are O(1). Therefore,
+the overall order of growth for this algorithm should be O(sqrt(n)).
+
+

@@ -1,0 +1,33 @@
+OPEN RESPONSE FOR HW4 Questions 1 and 2
+1. Explain why the (repaired1)ForwardElimination algorithm on page 210 of Levitin fails to provide a solution for:
+
+x1 + x2 + x3 = 6
+x1 + x2 + 2x3 = 9
+x1 + 2x2 + 3x3 = 14
+
+despite the fact that x = (1, 2, 3) or x1 = 1, x2 = 2, x3 = 3 can be easily verified
+as a solution to the system.
+
+How does the BetterForwardElimination algorithm on page 211 of Levitin remedy this?
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2. Explain in some detail why the BetterForwardElimination algorithm on page 211 of Levitin fails to provide a solution for:
+
+x1 + x2 + x3 = 6
+x1 + x2 + 2x3 = 9
+2x1 + 2x2 + 3x3 = 15
+
+despite the fact that x = (1, 2, 3) or x1 = 1, x2 = 2, x3 = 3 can be easily verified
+as a solution to the system.
+
+What can be done to remedy this shortcoming in the algorithm?
+
+The issue in this case is related to the size of the coefficients, which leads to a small pivot element during the Gaussian elimination process.
+When the pivot element is too small, it can introduce numerical instability and result in a loss of precision during subsequent steps of the algorithm.
+This loss of precision ultimately leads to an inaccurate solution.
+
+We can remedy the sortcoming in the algorithm by rescaling the coefficients where the algorithm won't have trouble with the small coefficients.
+We can also implement complete pivoting: I noticed partial pivoting is alrrady in this algotrithm, but compete pivoting is better,
+and although it computationally intensive, it shoudl help with the numerical stability.
